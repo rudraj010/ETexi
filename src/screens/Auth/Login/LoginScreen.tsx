@@ -2,8 +2,14 @@ import { Button, Image, Pressable, StyleSheet, Text, TextInput, View } from 'rea
 import React from 'react'
 import { height,width } from '../../../constant/helper'
 import flag from "../../../assets/flag.png"
+import { useNavigation } from '@react-navigation/native'
+import OtpScreen from './OtpScreen'
+
+
 
 const LoginScreen = () => {
+  const navigation =useNavigation()
+
   return (
     <>
 
@@ -34,8 +40,9 @@ const LoginScreen = () => {
         </View>
 
 
-        <View style={styles.nextButtoView}>
-        <Pressable style={({pressed})=>[styles.nextButton, pressed && styles.pressed]}>
+        <View  style={styles.nextButtoView}>
+        <Pressable     onPress={()=>navigation.navigate("OtpScreen")}
+ style={({pressed})=>[styles.nextButton, pressed && styles.pressed]}>
 
             <Text style={{color:"white"}} >Next</Text>
           </Pressable>
