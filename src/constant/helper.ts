@@ -2,8 +2,8 @@ import {Dimensions, PixelRatio, View} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Snackbar from 'react-native-snackbar';
 
-export const windowWidth = Dimensions.get('window').width
-export const windowHeight =Dimensions.get('window').height
+export const width = Dimensions.get('window').width
+export const height =Dimensions.get('window').height
 
 export const normalizeFont = (size: number) => {
     const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
