@@ -1,5 +1,5 @@
-// export const IMAGE_NAME= require('../path')
+const FLAG_IMAGE= require('../assets/flag.png')
 
-// export{
-//     IMAGE_NAME
-// }
+export{
+    FLAG_IMAGE
+}
